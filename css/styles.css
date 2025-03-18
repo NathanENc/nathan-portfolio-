@@ -1,0 +1,411 @@
+/* =========================================
+   RESET BÁSICO
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* =========================================
+     BODY & CONTAINER
+  ========================================= */
+  body {
+    background-color: #F1F1F1;
+    color: #1E1E1E;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* =========================================
+     HEADER (NAVBAR)
+  ========================================= */
+  .header {
+    background: #f1f1f1;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #1E1E1E;
+  }
+  
+  /* Menú centrado */
+  .nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav ul li {
+    margin: 0 15px;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .nav ul li a:hover {
+    color: #007BFF;
+  }
+  
+  /* Selector de idioma */
+  .language-switch {
+    font-size: 16px;
+  }
+  
+  .language-switch a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .language-switch a.active {
+    font-weight: 700;
+    color: #007BFF;
+  }
+  
+  /* =========================================
+     HERO SECTION 
+  ========================================= */
+  .hero {
+    background-color: #f1f1f1; /* Fondo blanco */
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 90vh; /* Ocupa el 90% de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heading-primary {
+    font-size: 48px;
+    font-weight: 900;
+    color: #007BFF; /* Texto en azul */
+    margin-bottom: 15px;
+  }
+  
+  .text-primary {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Botón principal */
+  .btn-primary {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* =========================================
+     ABOUT SECTION
+  ========================================= */
+  
+  /* Contenedor general de About */
+.about-section {
+    margin-top: 0; 
+}
+
+/* Parte superior en azul */
+.about-top {
+  background-color: #007BFF;
+  text-align: center;
+  padding: 80px 20px;
+  margin-bottom: 0; /* Evita espacio extra debajo del azul */
+}
+
+.about-top .section-title-about {
+    font-size: 32px;
+    font-weight: 700;
+    color: #F1F1F1;
+    margin-bottom: 20px;
+}
+
+.about-top .about-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #F1F1F1;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Parte inferior en blanco */
+.about-bottom {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 60px 20px; 
+    margin-top: -30px;
+    
+}
+
+/* Grid para las tarjetas */
+.about-grid {
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 0; 
+}
+
+/* Tarjetas */
+.card {
+    background: #f1f1f1;
+    color: black;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Tamaño fijo para las tarjetas */
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Círculo azul dentro de la tarjeta */
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: #007BFF;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+
+.circle i {
+  color: white;
+  font-size: 32px;
+}
+
+/* Destacar secciones en la tarjeta */
+.highlight {
+    font-weight: 600;
+    color: #007BFF;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Lista sin viñetas y con separación */
+.list {
+    list-style: none;
+    font-size: 18px;
+    padding: 0;
+}
+
+.list li {
+    margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+/* Botón centrado */
+.btn-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #f1f1f1;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 2px solid #007BFF;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #f1f1f1;
+    color: #007BFF;
+}
+  
+
+
+  /* =========================================
+     FOOTER
+  ========================================= */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #EAEAEA;
+    font-size: 14px;
+    color: #333;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  /* ============================= */
+/* RESPONSIVE DESIGN (MEDIA QUERIES) */
+/* ============================= */
+
+/* Menú hamburguesa para pantallas menores a 768px */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Muestra el botón de menú */
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  /* Oculta el menú normal y configura el menú desplegable */
+  .nav ul {
+    display: none; /* Oculta el menú por defecto */
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px 0;
+  }
+
+  /* Clase para mostrar el menú al hacer clic */
+  .nav ul.active {
+    display: flex;
+  }
+}
+
+/* Para pantallas de 1024px o menos (tabletas y laptops pequeñas) */
+@media screen and (max-width: 1024px) {
+  .about-container {
+    flex-direction: column; /* Apila los elementos */
+    text-align: center;
+  }
+
+  .about-text,
+  .about-image {
+    width: 100%; /* Ocupa todo el ancho */
+  }
+
+  .about-text {
+    margin-bottom: 30px;
+  }
+
+  .about-image img {
+    width: 60%; /* Ajusta el tamaño de la imagen */
+    max-width: 300px;
+  }
+}
+
+/* Para pantallas de 768px o menos (tabletas y móviles grandes) */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text,
+  .about-image {
+    width: 100%;
+  }
+
+  .about-text {
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+
+  .about-image img {
+    width: 70%;
+    max-width: 250px;
+  }
+
+  /* Apilar tarjetas en About */
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  /* Botón secundario ocupa todo el ancho */
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Ajustar la altura del hero para móviles */
+  .hero {
+    min-height: 70vh;
+    padding: 50px 20px;
+  }
+
+  /* Asegurar que la parte superior de About se centre */
+  .about-top {
+    text-align: center;
+    padding: 60px 20px;
+  }
+}
+
+/* Para pantallas de 480px o menos (teléfonos pequeños) */
+@media screen and (max-width: 480px) {
+  .about-text h2 {
+    font-size: 24px; /* Reduce el tamaño del título */
+  }
+
+  .about-text p {
+    font-size: 16px; /* Reduce el tamaño del párrafo */
+  }
+
+  .about-image img {
+    width: 80%;
+    max-width: 200px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}

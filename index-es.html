@@ -1,71 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Nathan Nava</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi portafolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+   <script src="../js/main.js" defer></script>
 </head>
 <body>
 
-    <!-- Navegación -->
-    <header class="header">
-        <div class="container header-container">
-            <!-- Logo -->
-            <a href="#" class="logo">Nathan</a>
-    
-            <!-- Menú de navegación -->
-            <nav class="nav">
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Sobre mí</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#contact">Contáctame</a></li>
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <div class="container header-container">
+        <a href="#" class="logo">Nathan</a>
+        <div class="menu-toggle">☰</div> <!-- Menú hamburguesa -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contáctame</a></li>
+            </ul>
+        </nav>
+        <div class="language-switch">
+            <a href="index.html">English</a> |
+            <a href="index-es.html" class="active">Español</a>
+            
+        </div>
+    </div>
+</header>
+
+  <!-- HERO (FONDO BLANCO) -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1 class="heading-primary"><span id="typing-text"></span></h1>
+      <h2 class="text-primary">
+        Construyendo experiencias digitales y analizando datos para tomar mejores decisiones.
+      </h2>
+      <a href="#projects" class="btn-primary">Proyectos</a>
+    </div>
+  </section>
+
+  <!-- ABOUT-->
+  <main>
+    <section class="about-section" id="about">
+        <!-- Parte superior (Fondo azul) -->
+        <div class="about-top">
+          <div class="container">
+            <h2 class="section-title-about">Hola, soy Nathan. Un gusto en conocerte</h2>
+            <p class="about-text">
+              Soy un desarrollador web con un año de experiencia creando y optimizando sitios y aplicaciones. 
+              Actualmente, trabajo en una empresa donde desarrollo y mejoro sistemas utilizando Python y tecnologías web. 
+              Me apasiona la creación de soluciones eficientes y escalables, siempre buscando mejorar mis habilidades en desarrollo y análisis de datos.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Parte inferior (Fondo blanco) -->
+        <div class="about-bottom">
+          <div class="container">
+            <div class="about-grid">
+              <!-- Tarjeta Diseñador -->
+              <div class="card">
+                <div class="circle">
+                    <i class="bi bi-brush"></i> 
+                  </div>
+                <h3>Diseñador</h3>
+                <p>Creatividad y diseño visual para interfaces atractivas.</p>
+                <span class="highlight">Hago</span>
+                <p>Diseño UI/UX y edición de contenido multimedia</p>
+                <span class="highlight">Herramientas de diseño</span>
+                <ul class="list">
+                  <li>Figma</li>
+                  <li>Canva</li>
+                  <li>WordPress</li>
+                  <li>Photoshop</li>
+                  <li>CapCut</li>
+                  <li>Adobe Premiere</li>
                 </ul>
-            </nav>
-    
-            <!-- Selector de idioma -->
-            <div class="language-switch">
-                <a href="index.html" class="disable">English</a> |
-                <a href="index-es.html" class="active">Español</a>
+              </div>
+      
+              <!-- Tarjeta Programador -->
+              <div class="card">
+                <div class="circle">
+                    <i class="bi bi-code-slash"></i> 
+                  </div>
+                <h3>Programador</h3>
+                <p>Desarrollo y optimización de sitios web y aplicaciones.</p>
+                <span class="highlight">Sé programar en</span>
+                <p>Lenguajes y tecnologías que manejo</p>
+                <span class="highlight">Herramientas de programación</span>
+                <ul class="list">
+                  <li>Python</li>
+                  <li>JavaScript</li>
+                  <li>HTML & CSS</li>
+                  <li>GitHub</li>
+                </ul>
+              </div>
             </div>
+      
+            <!-- Botón centrado -->
+            <div class="btn-container">
+                <a href="pages/about-es.html" class="btn-secondary">Conocer más</a>
+            </div>
+          </div>
         </div>
-    </header>
-    
-    <!-- Hero Section -->
-    <section class="hero" id="start">
-        <div class="container">
-            <h1 class="heading-primary">Desarrollador Web & Futuro Analista de Datos</h1>
-            <h2 class="text-primary">Construyendo experiencias digitales y analizando datos para tomar mejores decisiones.</h2>
-            <a href="#projects" class="btn-primary">Proyectos</a>
-        </div>
+      </section>
+      
+
+    <!-- SECCIÓN PROYECTOS -->
+    <section id="projects">
+      <!-- Tus proyectos aquí -->
     </section>
-    
-    <main>
-        <section class="about-section" id="about">
-            <div class="container">
-                <h2 class="section-title-about">Hola, soy Nathan. Un gusto en conocerte</h2>
-                <p class="about-text">
-                    Soy un desarrollador web con un año de experiencia creando y optimizando sitios y aplicaciones. 
-                    Actualmente, trabajo en una empresa donde desarrollo y mejoro sistemas utilizando Python y tecnologías web. 
-                    Me apasiona la creación de soluciones eficientes y escalables, siempre buscando mejorar mis habilidades en desarrollo y análisis de datos.
-                </p>
-            </div>
-        </section>
 
-        <section id="projects">
-            <!-- Aquí irá la sección "Proyectos" -->
-        </section>
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contact">
+      <!-- Formulario o datos de contacto -->
+    </section>
+  </main>
 
-        <section id="contact-me">
-            <!-- Aquí irá la sección "Contáctame" -->
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Nathan Nava - Todos los derechos reservados.</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2024 Nathan Nava - Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
